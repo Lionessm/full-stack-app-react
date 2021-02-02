@@ -4,6 +4,8 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import config from "./config";
+import React from 'react';
 
 class myComponent extends React.Component {
 
@@ -39,8 +41,6 @@ class myComponent extends React.Component {
 export default () => (
     <Router>
       <div>
-        <HeaderWithContext />
-
         <Switch>
           <Route exact path="/" component={myComponent} />
         </Switch>
