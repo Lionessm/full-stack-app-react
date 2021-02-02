@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Lionessm/full-stack-app-react/issues"
   },
-  "homepage": "https://github.com/Lionessm/full-stack-app-react#readme"
+  "homepage": "https://github.com/Lionessm/full-stack-app-react#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
