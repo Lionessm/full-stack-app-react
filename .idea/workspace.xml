@@ -11,8 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d76188ce-a35e-48b4-ba70-a389398e80e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/Courses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/course-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/course-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/create-course.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/create-course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/forbidden.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/forbidden.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/not-found.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/not-found.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/update-course.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/update-course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +54,27 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/public" />
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1612268878103</updated>
       <workItem from="1612268879784" duration="673000" />
+      <workItem from="1612286604207" duration="780000" />
+      <workItem from="1612309015110" duration="237000" />
     </task>
     <servers />
   </component>
