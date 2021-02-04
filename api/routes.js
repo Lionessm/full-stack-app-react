@@ -87,6 +87,7 @@ router.get('/api/courses/:id', async (req,res) => {
     res.locals.course = await Course.findByPk(req.params.id);
     const course = res.locals.course;
     course.user = await User.findByPk(course.userId);
+    console.log("Request recieved for course id: " + req.params.id)
     res.json({
         id: course.id,
         title: course.title,

@@ -11,7 +11,7 @@ class CourseDetail extends React.Component {
         };
     }
     componentDidMount() {
-        fetch(config.apiBaseUrl + '/courses')
+        fetch(config.apiBaseUrl + `/courses/1`)
             .then((response) => response.json())
             .then((data) => {
                 console.log("data", data);
@@ -45,7 +45,7 @@ class CourseDetail extends React.Component {
                         <div className="grid-66">
                             <div className="course--header">
                                 <h4 className="course--label">Course</h4>
-                                <h3 className="course--title">{courses.id}</h3>
+                                <h3 className="course--title">{courses.title}</h3>
                                 <p>By Joe Smith</p>
                             </div>
                             <div className="course--description">
