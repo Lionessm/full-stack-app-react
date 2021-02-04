@@ -16,7 +16,7 @@ export default () => (
           <div>
             <Switch>
               <Route exact path="/" component={Courses} />
-              <Route path='/courses/details/' component={CourseDetail}/>
+              <Route path='/courses/details/:id' component={CourseDetail}/>
             </Switch>
           </div>
         </header>

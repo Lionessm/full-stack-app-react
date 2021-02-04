@@ -1,6 +1,5 @@
 import React from 'react';
 import config from './config.js';
-import axios from 'axios';
 
 class CourseDetail extends React.Component {
 
@@ -11,7 +10,8 @@ class CourseDetail extends React.Component {
         };
     }
     componentDidMount() {
-        fetch(config.apiBaseUrl + `/courses/1`)
+        console.log("this.props.match.params.id ", this.props.match.params.id)
+        fetch(config.apiBaseUrl + `/courses/${this.props.match.params.id}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log("data", data);
