@@ -6,6 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 import config from "./config";
+import Header from './Header';
 
 
 class Courses extends React.Component {
@@ -26,16 +27,21 @@ class Courses extends React.Component {
         })
   }
   render() {
-    const { courses } = this.state;
+        const { courses } = this.state;
 
-    return (<ul>
-      {courses.map(course => (
-          <li key={course.id}>
-            {course.title}
-          </li>
-      ))}
-    </ul>)
-  }
+        return (
+       <div>
+            <Header />
+            <ul>
+                {courses.map(course => (
+                    <li key={course.id}>
+                        {course.title}
+                    </li>
+                ))}
+            </ul>
+        </div>
+        )
+    }
 }
 
 
