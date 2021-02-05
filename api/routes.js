@@ -1,5 +1,7 @@
 'use strict';
 
+const { errorHandler } = require("./middleware/error-handler");
+
 const express = require('express');
 const { asyncHandler } = require('./middleware/async-handler');
 const { User } = require('./models');
@@ -10,7 +12,7 @@ const { Course } = require('./models');
 const router = express.Router();
 
 // setup a friendly greeting for the root route
-router.get('/',   (req, res) => {
+router.get('/', (req, res) => {
     res.json({
         message: 'Welcome to the REST API project!',
     });
@@ -68,6 +70,7 @@ router.get('/api/courses', async (req, res) => {
             title: course.title,
             description: course.description,
             estimatedTime: course.estimatedTime,
+            materialsNeeded: course.materialsNeeded,
             userId: course.userId,
             user: {
                 id: course.user.id,
@@ -85,14 +88,16 @@ router.get('/api/courses', async (req, res) => {
 // setup a course GET route that returns corresponding course with a 200 HTTP status code
 router.get('/api/courses/:id', async (req,res) => {
     res.locals.course = await Course.findByPk(req.params.id);
-    const course = res.locals.course;
-    course.user = await User.findByPk(course.userId);
+        const course = res.locals.course;
+        course.user = await User.findByPk(course.userId);
+
     console.log("Request recieved for course id: " + req.params.id)
     res.json({
         id: course.id,
         title: course.title,
         description: course.description,
         estimatedTime: course.estimatedTime,
+        materialsNeeded: course.materialsNeeded,
         userId: course.userId,
         user: {
             id: course.user.id,
