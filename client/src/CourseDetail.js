@@ -1,7 +1,8 @@
 import React from 'react';
 import config from './config.js';
-import './index.css';
 import Header from "./Header";
+import "./global.css";
+
 
 class CourseDetail extends React.Component {
 
@@ -30,13 +31,14 @@ class CourseDetail extends React.Component {
 
     render () {
         const { courses } = this.state;
+
         return (
-            <div id="root">
+            <div>
             <title>Courses</title>
             <Header />
                     <div className="actions--bar">
                         <div className="bounds">
-                            <div className="grid-100"><span><a className="button" href="update-course.js">Update Course</a><a className="button" href="#">Delete Course</a></span><a className="button button-secondary" href="index.html">Return to List</a></div>
+                            <div className="grid-100"><span><a className="button" href="">Update Course</a><a className="button" href="#">Delete Course</a></span><a className="button button-secondary" href="index.html">Return to List</a></div>
                         </div>
                     </div>
                     <div className="bounds course--detail">
@@ -44,7 +46,7 @@ class CourseDetail extends React.Component {
                             <div className="course--header">
                                 <h4 className="course--label">Course</h4>
                                 <h3 className="course--title">{courses.title}</h3>
-                                <p> By {courses.user.firstName}</p>
+                                <p> By {courses.user.firstName} {courses.user.lastName}</p>
                             </div>
                             <div className="course--description">
                                 <p> {courses.description} </p>
@@ -59,6 +61,7 @@ class CourseDetail extends React.Component {
                                     </li>
                                     <li className="course--stats--list--item">
                                         <h4>Materials Needed</h4>
+
                                         <ul>
                                            <li>{courses.materialsNeeded}</li>
                                         </ul>
@@ -67,7 +70,7 @@ class CourseDetail extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
         )
     }
 }
