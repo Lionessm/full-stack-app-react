@@ -1,12 +1,18 @@
 import React from 'react';
 import config from './config.js';
+import './index.css';
+import Header from "./Header";
 
 class CourseDetail extends React.Component {
 
     constructor(props){
         super(props);
         this.state = {
-            courses: [],
+            courses: {
+                user: {
+
+                },
+            },
         };
     }
     componentDidMount() {
@@ -25,18 +31,9 @@ class CourseDetail extends React.Component {
     render () {
         const { courses } = this.state;
         return (
-            <div>
-            <title>Courses</title>
             <div id="root">
-                <div>
-                    <div className="header">
-                        <div className="bounds">
-                            <h1 className="header--logo">Courses</h1>
-                            <nav><span>Welcome {this.name}</span><a className="signout" href="index.js">Sign Out</a></nav>
-                        </div>
-                    </div>
-                </div>
-                <div>
+            <title>Courses</title>
+            <Header />
                     <div className="actions--bar">
                         <div className="bounds">
                             <div className="grid-100"><span><a className="button" href="update-course.js">Update Course</a><a className="button" href="#">Delete Course</a></span><a className="button button-secondary" href="index.html">Return to List</a></div>
@@ -47,7 +44,7 @@ class CourseDetail extends React.Component {
                             <div className="course--header">
                                 <h4 className="course--label">Course</h4>
                                 <h3 className="course--title">{courses.title}</h3>
-                                <p> By X </p>
+                                <p> By {courses.user.firstName}</p>
                             </div>
                             <div className="course--description">
                                 <p> {courses.description} </p>
@@ -71,8 +68,6 @@ class CourseDetail extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
         )
     }
 }
