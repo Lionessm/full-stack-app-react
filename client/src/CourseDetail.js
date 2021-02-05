@@ -10,9 +10,13 @@ class CourseDetail extends React.Component {
         super(props);
         this.state = {
             courses: {
+                title: [],
+                description: [],
+                estimatedTime: [],
+                materialsNeeded: [],
                 user: {
-
                 },
+                userId: []
             },
         };
     }
@@ -31,6 +35,7 @@ class CourseDetail extends React.Component {
 
     render () {
         const { courses } = this.state;
+        const materials = courses.materialsNeeded;
 
         return (
             <div>
@@ -61,10 +66,9 @@ class CourseDetail extends React.Component {
                                     </li>
                                     <li className="course--stats--list--item">
                                         <h4>Materials Needed</h4>
-
-                                        <ul>
-                                           <li>{courses.materialsNeeded}</li>
-                                        </ul>
+                                            <ul>
+                                                <li>{materials}</li>
+                                            </ul>
                                     </li>
                                 </ul>
                             </div>
