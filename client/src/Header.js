@@ -12,7 +12,7 @@ class Header extends React.Component {
         return(
             <div className="header">
                 <div className="bounds">
-                    <h1 className="header--logo">MyAuth</h1>
+                    <h1 className="header--logo">Courses</h1>
                     <nav>
                             <React.Fragment>
                                 <span>Welcome!</span>
