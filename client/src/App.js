@@ -8,6 +8,7 @@ import React from 'react';
 import Courses from './Courses';
 import CourseDetail from './CourseDetail';
 import UserSignIn from "./UserSignIn";
+import UserSignUp from "./UserSignUp";
 
 
 
@@ -19,6 +20,7 @@ export default () => (
               <Route exact path="/" component={Courses} />
               <Route path='/courses/details/:id' component={CourseDetail}/>
               <Route path='/signin' component={UserSignIn}/>
+              <Route path='/signup' component={UserSignUp}/>
             </Switch>
           </div>
         </header>
