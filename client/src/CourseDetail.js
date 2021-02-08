@@ -30,9 +30,6 @@ class CourseDetail extends React.Component {
             })
     }
 
-
-    // creeaza un loop pentru materials needed sa fie ul
-
     render () {
         const { courses } = this.state;
         const materials = courses.materialsNeeded;
