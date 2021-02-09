@@ -9,6 +9,7 @@ import Courses from './Courses';
 import CourseDetail from './CourseDetail';
 import UserSignIn from "./UserSignIn";
 import UserSignUp from "./UserSignUp";
+import createCourse from "./create-course";
 
 
 
@@ -21,6 +22,7 @@ export default () => (
               <Route path='/courses/details/:id' component={CourseDetail}/>
               <Route path='/signin' component={UserSignIn}/>
               <Route path='/signup' component={UserSignUp}/>
+              <Route patch='/createcourse' component={createCourse}/>
             </Switch>
           </div>
         </header>
