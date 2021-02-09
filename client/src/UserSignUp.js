@@ -3,6 +3,19 @@ import { Redirect } from 'react-router-dom'
 import Header from "./Header";
 
 class UserSignUp extends React.Component {
+    state = {
+        redirect: false
+    }
+    setRedirect = () => {
+        this.setState({
+            redirect: true
+        })
+    }
+    renderRedirect = () => {
+        if (this.state.redirect) {
+            return <Redirect to='/' />
+        }
+    }
 
     constructor(props) {
         super(props)
@@ -29,14 +42,15 @@ class UserSignUp extends React.Component {
                                             placeholder="Confirm Password" defaultValue/></div>
                                 <div className="grid-100 pad-bottom">
                                     <button className="button" type="submit">Sign Up</button>
+                                    {this.renderRedirect()}
                                     <button className="button button-secondary"
-                                            onClick="event.preventDefault(); location.href='index.html';">Cancel
+                                            onClick={this.setRedirect}>Cancel
                                     </button>
                                 </div>
                             </form>
                         </div>
                         <p>&nbsp;</p>
-                        <p>Already have a user account? <a href="sign-in.html">Click here</a> to sign in!</p>
+                        <p>Already have a user account? <a href="signin">Click here</a> to sign in!</p>
                     </div>
                 </div>
             </div>
