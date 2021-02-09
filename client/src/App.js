@@ -20,11 +20,11 @@ export default () => (
           <div>
             <Switch>
               <Route exact path="/" component={Courses} />
-              <Route path='/courses/details/:id' component={CourseDetail}/>
               <Route path='/signin' component={UserSignIn}/>
               <Route path='/signup' component={UserSignUp}/>
-              <Route path='/createCourse' component={createCourse}/>
-              <Route path='/courses/update' component={updateCourse}/>
+              <Route path='/courses/create' component={createCourse}/>
+              <Route path='/courses/:id/update' component={updateCourse}/>
+              <Route path='/courses/:id' component={CourseDetail}/>
             </Switch>
           </div>
         </header>
