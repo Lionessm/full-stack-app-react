@@ -40,7 +40,7 @@ class CourseDetail extends React.Component {
             <Header />
                     <div className="actions--bar">
                         <div className="bounds">
-                            <div className="grid-100"><span><a className="button" href="">Update Course</a><a className="button" href="#">Delete Course</a></span><a className="button button-secondary" href="index.html">Return to List</a></div>
+                            <div className="grid-100"><span><a className="button" href={`/courses/${this.props.match.params.id}/update`}>Update Course</a><a className="button" href="#">Delete Course</a></span><a className="button button-secondary" href="/">Return to List</a></div>
                         </div>
                     </div>
                     <div className="bounds course--detail">
